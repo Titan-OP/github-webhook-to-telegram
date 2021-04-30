@@ -1,19 +1,6 @@
 ## GitHub Webhook to Telegram
 
-Receive GitHub webhook events and send to Telegram chats
-with [AIOHTTP](https://github.com/aio-libs/aiohttp)
-through [Telegram Bot API](https://core.telegram.org/bots/api#sendmessage)
-
-What this project do is very simple, it does not use any Telegram Bot API
-framework/library nor receive updates from Telegram, but calling `sendMessage`
-method of Telegram Bot API directly by sending `GET` requests through AIOHTTP.
-It should be able to be used along with any existing Telegram bot without
-conflicts.
-
-1. Receive GitHub webhooks (`POST` request)
-2. Verify the SHA256 signature
-3. Format and send the text to a Telegram chat through "sendMessage" method of
-   Telegram Bot API (`GET` request)
+ʀᴇᴄᴇɪᴠᴇ ɢɪᴛʜᴜʙ ᴡᴇʙʜᴏᴏᴋ ᴇᴠᴇɴᴛꜱ ᴀɴᴅ ꜱᴇɴᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛꜱ ᴡɪᴛʜ [ᴀɪᴏʜᴛᴛᴘ](ʜᴛᴛᴘꜱ://ɢɪᴛʜᴜʙ.ᴄᴏᴍ/ᴀɪᴏ-ʟɪʙꜱ/ᴀɪᴏʜᴛᴛᴘ) ᴛʜʀᴏᴜɢʜ [ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴀᴘɪ](ʜᴛᴛᴘꜱ://ᴄᴏʀᴇ.ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ/ʙᴏᴛꜱ/ᴀᴘɪ#ꜱᴇɴᴅᴍᴇꜱꜱᴀɢᴇ)  ᴡʜᴀᴛ ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ᴅᴏ ɪꜱ ᴠᴇʀʏ ꜱɪᴍᴘʟᴇ, ɪᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴜꜱᴇ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴀᴘɪ ꜰʀᴀᴍᴇᴡᴏʀᴋ/ʟɪʙʀᴀʀʏ ɴᴏʀ ʀᴇᴄᴇɪᴠᴇ ᴜᴘᴅᴀᴛᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ, ʙᴜᴛ ᴄᴀʟʟɪɴɢ `ꜱᴇɴᴅᴍᴇꜱꜱᴀɢᴇ` ᴍᴇᴛʜᴏᴅ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴀᴘɪ ᴅɪʀᴇᴄᴛʟʏ ʙʏ ꜱᴇɴᴅɪɴɢ `ɢᴇᴛ` ʀᴇQᴜᴇꜱᴛꜱ ᴛʜʀᴏᴜɢʜ ᴀɪᴏʜᴛᴛᴘ. ɪᴛ ꜱʜᴏᴜʟᴅ ʙᴇ ᴀʙʟᴇ ᴛᴏ ʙᴇ ᴜꜱᴇᴅ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴀɴʏ ᴇxɪꜱᴛɪɴɢ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴄᴏɴꜰʟɪᴄᴛꜱ.  1. ʀᴇᴄᴇɪᴠᴇ ɢɪᴛʜᴜʙ ᴡᴇʙʜᴏᴏᴋꜱ (`ᴘᴏꜱᴛ` ʀᴇQᴜᴇꜱᴛ) 2. ᴠᴇʀɪꜰʏ ᴛʜᴇ ꜱʜᴀ256 ꜱɪɢɴᴀᴛᴜʀᴇ 3. ꜰᴏʀᴍᴀᴛ ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴛᴇxᴛ ᴛᴏ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛ ᴛʜʀᴏᴜɢʜ "ꜱᴇɴᴅᴍᴇꜱꜱᴀɢᴇ" ᴍᴇᴛʜᴏᴅ ᴏꜰ    ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴀᴘɪ (`ɢᴇᴛ` ʀᴇQᴜᴇꜱᴛ)
 
 ### Heroku
 
