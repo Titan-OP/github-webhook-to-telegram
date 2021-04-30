@@ -17,7 +17,7 @@ conflicts.
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dashezup/github-webhook-to-telegram)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Titan-OP/github-webhook-to-telegram)
 
 ### Setup
 
@@ -72,3 +72,9 @@ AGPL-3.0-or-later
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```
+
+ # **Credits**
+
+ ➥ **тє¢нησ_ρяσ** 
+
+<a href="https://github.com/Titan-OP" alt="Tᴇᴄʜɴᴏ Pʀᴏ"> <img src="https://img.shields.io/badge/-T%E1%B4%87%E1%B4%84%CA%9C%C9%B4%E1%B4%8F%20P%CA%80%E1%B4%8F-blue?logo=github" /></a>     <a href="https://telegram.me/DARK_DEVIL_OP" alt="Tᴇᴄʜɴᴏ Pʀᴏ"> <img src="https://img.shields.io/badge/-T%E1%B4%87%E1%B4%84%CA%9C%C9%B4%E1%B4%8F%20P%CA%80%E1%B4%8F-bluevoilet?logo=telegram" /></a>
